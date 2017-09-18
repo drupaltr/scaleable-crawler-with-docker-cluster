@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from test_celery.celery import app
 import time,requests
 from pymongo import MongoClient
-client = MongoClient('10.1.1.234', 27018) # change the ip and port to your mongo database's
+client = MongoClient('mongodb', 27018) # change the ip and port to your mongo database's
 db = client.mongodb_test
 collection = db.celery_test
 post = db.test
